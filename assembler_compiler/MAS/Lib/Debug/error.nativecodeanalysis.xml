@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+      <FILENAME>error.cpp</FILENAME>
+      <LINE>79</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Чтение недопустимых данных из "errors":  доступный для чтения объем равен "208000" байт, однако считать можно только "id" байт.</DESCRIPTION>
+    <FUNCTION>Error::geterror</FUNCTION>
+    <DECORATED>?geterror@Error@@YA?AUERROR@1@H@Z</DECORATED>
+    <FUNCLINE>73</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+        <FILENAME>error.cpp</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>27</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Пропустить эту ветвь (предполагается, что "id&gt;1000||id&lt;0" равно false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+        <FILENAME>error.cpp</FILENAME>
+        <LINE>79</LINE>
+        <COLUMN>2</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция чтения из "errors[1000]" (доступный для чтения диапазон: от 0 до 999)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+      <FILENAME>error.cpp</FILENAME>
+      <LINE>87</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Переполнение буфера при записи в "errors":  доступный для записи объем равен "208000" байт, однако записать можно только "id" байт.</DESCRIPTION>
+    <FUNCTION>Error::geterrorin</FUNCTION>
+    <DECORATED>?geterrorin@Error@@YA?AUERROR@1@HHH@Z</DECORATED>
+    <FUNCLINE>81</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+        <FILENAME>error.cpp</FILENAME>
+        <LINE>83</LINE>
+        <COLUMN>27</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Пропустить эту ветвь (предполагается, что "id&gt;1000||id&lt;0" равно false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+        <FILENAME>error.cpp</FILENAME>
+        <LINE>87</LINE>
+        <COLUMN>25</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция записи в "errors[1000]" (доступный для записи диапазон: от 0 до 999)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+      <FILENAME>error.cpp</FILENAME>
+      <LINE>89</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Чтение недопустимых данных из "errors":  доступный для чтения объем равен "208000" байт, однако считать можно только "id" байт.</DESCRIPTION>
+    <FUNCTION>Error::geterrorin</FUNCTION>
+    <DECORATED>?geterrorin@Error@@YA?AUERROR@1@HHH@Z</DECORATED>
+    <FUNCLINE>81</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+        <FILENAME>error.cpp</FILENAME>
+        <LINE>83</LINE>
+        <COLUMN>27</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Пропустить эту ветвь (предполагается, что "id&gt;1000||id&lt;0" равно false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+        <FILENAME>error.cpp</FILENAME>
+        <LINE>87</LINE>
+        <COLUMN>25</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+        <FILENAME>error.cpp</FILENAME>
+        <LINE>88</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+        <FILENAME>error.cpp</FILENAME>
+        <LINE>89</LINE>
+        <COLUMN>2</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция чтения из "errors[1000]" (доступный для чтения диапазон: от 0 до 999)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

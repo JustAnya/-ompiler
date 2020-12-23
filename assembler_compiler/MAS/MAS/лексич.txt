@@ -1,0 +1,37 @@
+int function mas (int s, int h) 
+{
+ var int l;
+ l = (s+-h)*7;
+ ret l; 
+};
+
+int function masa (char str)
+{
+var int А;
+a = strln(str);
+ret a;
+}; 
+
+main
+{
+ var int a;
+ var char z;
+ var int x;
+ var int y;
+ var int p;
+ var int u;
+ x = 4;
+ y = 5;
+ z = "helloworld, мой контольный пример" ;
+ out(z);
+ var char k;
+ k = "mas-2017";
+ p = masa (k);
+ out (p);
+ a = mas (x,y);
+ out (a);
+ u = powr(y, 4);
+ out (u);
+ out("01071998");
+ ret 0;
+};

@@ -1,0 +1,3 @@
+﻿  FST.cpp
+d:\курсовой мой\mas\lib\fst.cpp(30): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+  Lib.vcxproj -> D:\Курсовой мой\MAS\Debug\Lib.lib

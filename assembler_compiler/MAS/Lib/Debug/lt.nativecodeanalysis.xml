@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+      <FILENAME>lt.cpp</FILENAME>
+      <LINE>11</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Переполнение буфера при записи в "newTabl-&gt;table":  доступный для записи объем равен "size*16" байт, однако записать можно только "255" байт.</DESCRIPTION>
+    <FUNCTION>LT::Create</FUNCTION>
+    <DECORATED>?Create@LT@@YA?AULexTable@1@H@Z</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+        <FILENAME>lt.cpp</FILENAME>
+        <LINE>7</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+        <FILENAME>lt.cpp</FILENAME>
+        <LINE>8</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+        <FILENAME>lt.cpp</FILENAME>
+        <LINE>9</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+        <FILENAME>lt.cpp</FILENAME>
+        <LINE>10</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+        <FILENAME>lt.cpp</FILENAME>
+        <LINE>11</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"_Old_4`255" равно 255</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\курсовой мой\mas\lib\</FILEPATH>
+        <FILENAME>lt.cpp</FILENAME>
+        <LINE>11</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция записи в "newTabl-&gt;table" (за пределами доступного для записи диапазона)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>
